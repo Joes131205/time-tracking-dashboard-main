@@ -65,6 +65,7 @@
     width: 100%;
     padding: 1.5rem;
     border-radius: 1rem;
+    position: inherit;
 }
 
 body {
