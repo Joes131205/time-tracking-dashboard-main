@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+    --blue: hsl(246, 80%, 60%);
+
+    --light-red-work: hsl(15, 100%, 70%);
+    --soft-blue-play: hsl(195, 74%, 62%);
+    --light-red-study: hsl(348, 100%, 68%);
+    --lime-green-exercise: hsl(145, 58%, 55%);
+    --violet-social: hsl(264, 64%, 52%);
+    --soft-orange-self-care: hsl(43, 84%, 65%);
+
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+}
+
+* {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+}
+
+.item1 {
+    grid-area: info;
+    border-radius: 10px;
+    background-color: var(--blue);
+    padding: 20px;
+}
+
+.item2 {
+    grid-area: work;
+    background-color: var(--light-red-work);
+}
+
+.item3 {
+    grid-area: play;
+    background-color: var(--soft-blue-play);
+}
+
+.item4 {
+    grid-area: study;
+    background-color: var(--light-red-study);
+}
+
+.item5 {
+    grid-area: exercise;
+    background-color: var(--lime-green-exercise);
+}
+
+.item6 {
+    grid-area: social;
+    background-color: var(--violet-social);
+}
+
+.item7 {
+    grid-area: self-care;
+    background-color: var(--soft-orange-self-care);
+}
+
+.wrapper {
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--very-dark-blue);
+}
+.container {
+    display: grid;
+    grid-template-areas: "info work play study" "info exercise social self-care";
+    gap: 2rem;
+}
+
+.container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 2rem 4rem;
+    color: var(--pale-blue);
+}
+/*Font Size: 18px*/
